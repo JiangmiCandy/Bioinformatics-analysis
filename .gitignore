@@ -1,0 +1,73 @@
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# R
+# =========================
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user
+
+# R package build
+*.tar.gz
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# virtual environment
+venv/
+env/
+.venv/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Large data (usually not versioned)
+# =========================
+data/
+raw_data/
+
+# =========================
+# Results / intermediate files
+# =========================
+results/
+output/
+figures/
+
+# =========================
+# Bioinformatics temporary files
+# =========================
+*.bam
+*.bai
+*.sam
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.vcf
+*.vcf.gz
+
+# =========================
+# Conda / mamba
+# =========================
+conda-meta/
+.mamba/
+
+# =========================
+# Editor
+# =========================
+.vscode/
