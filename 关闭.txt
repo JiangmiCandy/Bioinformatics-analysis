@@ -1,3 +1,5 @@
+要启用的话把文件名改为.gitignore
+
 # =========================
 # OS files
 # =========================
@@ -38,8 +40,8 @@ logs/
 # =========================
 # Large data (usually not versioned)
 # =========================
-data/
-raw_data/
+#data/
+#raw_data/
 
 # =========================
 # Results / intermediate files
