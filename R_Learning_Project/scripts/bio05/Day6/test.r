@@ -16,4 +16,3 @@ mutate(test, new = Sepal.Length * Sepal.Width)  #新增名为new的列
 
 # arrange    #按某一列或某几列对整个表格进行排序
 
-
