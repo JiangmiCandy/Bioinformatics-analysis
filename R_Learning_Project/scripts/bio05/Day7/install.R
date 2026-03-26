@@ -1,3 +1,6 @@
+#首先是设置镜像
+options(BioC_mirror="https://mirrors.westlake.edu.cn/bioconductor")
+options("repos"=c(CRAN="https://mirrors.westlake.edu.cn/CRAN/"))
 if(!require("BiocManager")) install.packages("BiocManager",update = F,ask = F)
 options(BioC_mirror="https://mirrors.westlake.edu.cn/bioconductor")
 #来自cran的包放在一个向量里
@@ -12,7 +15,7 @@ cran_packages <- c('tidyverse',
                    'harmony','tinyarray'
                    ) 
 #来自bioconductor的包放在一个向量里
-Biocductor_packages <- c('sva','monocle','GEOquery',
+Bioconductor_packages <- c('sva','monocle','GEOquery',
                          'GOplot','GSEABase','scrapper',
                          'GSVA','plotmo','monocle',
                          'regplot','scRNAseq',
@@ -46,3 +49,4 @@ for (pkg in c(Biocductor_packages,cran_packages)){
 }
 #查看Seurat的版本
 packageVersion("Seurat")
+
