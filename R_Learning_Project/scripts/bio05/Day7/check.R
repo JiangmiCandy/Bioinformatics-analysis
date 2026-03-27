@@ -6,10 +6,10 @@
 desired_cran <- "https://cloud.r-project.org"
 current_cran <- getOption("repos")["CRAN"]
 
-if (current_cran != desired_cran) {
-  message("⚡ 当前 CRAN 镜像不是国际源，自动切换到国际镜像")
-  options(repos = c(CRAN = desired_cran))
-}
+# if (current_cran != desired_cran) {
+#   message("⚡ 当前 CRAN 镜像不是国际源，自动切换到国际镜像")
+#   options(repos = c(CRAN = desired_cran))
+# }
 
 # Bioconductor 默认镜像即可，不用改
 # 也可以显示设置：
