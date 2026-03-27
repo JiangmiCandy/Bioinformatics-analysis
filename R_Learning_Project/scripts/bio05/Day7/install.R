@@ -4,16 +4,7 @@ options("repos"=c(CRAN="https://mirrors.westlake.edu.cn/CRAN/"))
 if(!require("BiocManager")) install.packages("BiocManager",update = F,ask = F)
 options(BioC_mirror="https://mirrors.westlake.edu.cn/bioconductor")
 #来自cran的包放在一个向量里
-cran_packages <- c('tidyverse',
-                   'msigdbr',
-                   'patchwork',
-                   'SeuratObject',
-                   'Seurat','devtools',#忽略颜色差别，因为我后加的
-                   'ggalluvial','AnnoProbe',
-                   'ggpubr','pheatmap',
-                   'NMF','ggsci','survminer',
-                   'harmony','tinyarray'
-                   ) 
+cran_packages <- c('tidyverse','msigdbr','patchwork','SeuratObject','Seurat','devtools','ggalluvial','AnnoProbe','ggpubr','pheatmap','NMF','ggsci','survminer','harmony','tinyarray') 
 #来自bioconductor的包放在一个向量里
 Bioconductor_packages <- c('sva','monocle','GEOquery',
                          'GOplot','GSEABase','scrapper',
