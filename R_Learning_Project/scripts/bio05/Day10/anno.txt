@@ -1,0 +1,12 @@
+0,naive B
+1,CD8 T
+2,Naive CD4 T
+3,Naive CD4 T
+4,Naive CD4 T
+5,plasma B
+6,CD14+ Mono
+7,endothelial
+8,Fibroblasts
+9,NK
+10,endothelial
+11,DC

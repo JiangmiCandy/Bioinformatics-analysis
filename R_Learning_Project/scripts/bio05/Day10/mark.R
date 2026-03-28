@@ -17,4 +17,4 @@ new.cluster.ids[is.na(new.cluster.ids)] = "unknown"#如有NA，就替换为unkno
 names(new.cluster.ids) <- levels(scRNA)
 scRNA <- RenameIdents(scRNA,new.cluster.ids)
 p3 <- DimPlot(scRNA, reduction = "umap",label = T,pt.size = 0.5) + NoLegend()
-p1+p3
+p2+p3
