@@ -4,6 +4,7 @@ options("repos"=c(CRAN="https://mirrors.westlake.edu.cn/CRAN/"))
 if(!require("BiocManager")) install.packages("BiocManager",update = F,ask = F)
 options(BioC_mirror="https://mirrors.westlake.edu.cn/bioconductor")
 #来自cran的包放在一个向量里
+<<<<<<< HEAD:R_Learning_Project/scripts/bio05/Day8/install.R
 cran_packages <- c('tidyverse',
                    'msigdbr',
                    'patchwork',
@@ -14,6 +15,9 @@ cran_packages <- c('tidyverse',
                    'NMF','ggsci','survminer',
                    'harmony','tinyarray'
 ) 
+=======
+cran_packages <- c('tidyverse','msigdbr','patchwork','SeuratObject','Seurat','devtools','ggalluvial','AnnoProbe','ggpubr','pheatmap','NMF','ggsci','survminer','harmony','tinyarray') 
+>>>>>>> 4b0b69f713696c349ff5198d3b9cad00156b6090:R_Learning_Project/scripts/bio05/Day7/install.R
 #来自bioconductor的包放在一个向量里
 Biocductor_packages <- c('sva','monocle','GEOquery',
                          'GOplot','GSEABase','scrapper',
