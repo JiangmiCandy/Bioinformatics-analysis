@@ -13,9 +13,9 @@ cran_packages <- c('tidyverse',
                    'ggpubr','pheatmap',
                    'NMF','ggsci','survminer',
                    'harmony','tinyarray'
-                   ) 
+) 
 #来自bioconductor的包放在一个向量里
-Bioconductor_packages <- c('sva','monocle','GEOquery',
+Biocductor_packages <- c('sva','monocle','GEOquery',
                          'GOplot','GSEABase','scrapper',
                          'GSVA','plotmo','monocle',
                          'regplot','scRNAseq',
@@ -26,7 +26,7 @@ Bioconductor_packages <- c('sva','monocle','GEOquery',
                          'org.Mm.eg.db','clusterProfiler',
                          'Biobase','BiocNeighbors',
                          'BiocGenerics','ComplexHeatmap'
-
+                         
 )
 #用for循环批量安装来自cran的包
 for (pkg in cran_packages){
@@ -49,4 +49,3 @@ for (pkg in c(Biocductor_packages,cran_packages)){
 }
 #查看Seurat的版本
 packageVersion("Seurat")
-
