@@ -1,3 +1,4 @@
+memory.limit(102400)
 rm(list = ls())
 library(Seurat)
 rdaf = "sce.all.Rdata"
@@ -15,8 +16,8 @@ if(!file.exists(rdaf)){
   sce.all = merge(scelist[[1]],scelist[-1]) #合并多个对象
   sce.all = JoinLayers(sce.all) 
   #merge后，每个样本的表达矩阵是一个独立的的layer，JoinLayers是合并为一个表达矩阵
-  set.seed(335)
-  sce.all = subset(sce.all,downsample=700)#每个样本抽700个细胞
+  # set.seed(335) ,downsample=700
+  sce.all = subset(sce.all)#每个样本抽700个细胞
   save(sce.all,file = rdaf)
 }
 load(rdaf)
