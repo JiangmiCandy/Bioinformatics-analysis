@@ -10,6 +10,7 @@
 ############################
 *.Rdata
 *.rds
+.RDataTmp*
 
 ############################
 # Single-cell / bioinfo data
